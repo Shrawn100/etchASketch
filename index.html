@@ -11,7 +11,31 @@
 
 </head>
 <body>
-   
+    <h1>Etch a Sketch</h1>
+   <div class="content">
+      <div class="board"></div>
+
+
+      <div class="buttons">
+        <button class="stylingB" id="colorOption">Colour</button>
+        <button class="stylingB" id="rainbow">Rainbow</button>
+        <button class="stylingB" id="eraser" onclick="changeColor('white')">Eraser</button>
+        <button class="stylingB" onclick="reset()">Reset</button>
+      </div>
+
+      <div class="selectSize">Please select a size for your canvas(2-99):</div>
+      <div class="input">
+        <input type="text" id="change" >
+        <button class="submit" onclick="changeSize()">Change</button>
+      </div>
+      <p id="error"></p>
+
+
+
+
+    </div>
+
     
 </body>
 </html>
+
